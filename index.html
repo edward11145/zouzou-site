@@ -2,96 +2,149 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Zou Zou Green Island</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zou Zou Green Island 潛水</title>
+  <meta name="description" content="綠島潛水、體驗潛水、旅遊潛水與 PADI 潛水考證，盡在 Zou Zou 走走工作室！" />
   <style>
+    * { box-sizing: border-box; }
     body {
-      font-family: 'Noto Sans TC', sans-serif;
-      background: linear-gradient(to bottom, #b9e4ea 0%, #ffffff 100%);
       margin: 0;
-      padding: 0;
-      color: #004d4d;
-    }
-    header {
-      background: url('https://images.unsplash.com/photo-1544551763-7e0b3e3f6a56?auto=format&fit=crop&w=1280&q=80') no-repeat center center;
+      font-family: 'Noto Sans TC', sans-serif;
+      background: url('https://img.freepik.com/free-vector/blue-wavy-pattern-background_23-2149114157.jpg?w=2000') no-repeat center center fixed;
       background-size: cover;
       color: white;
-      padding: 4em 1em;
-      text-align: center;
-      text-shadow: 1px 1px 4px #000;
     }
-    .logo {
-      font-size: 2.8em;
-      font-weight: 700;
-      letter-spacing: 1px;
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.3); /* 調整為較淺的遮罩 */
+      min-height: 100vh;
     }
-    .slogan {
-      font-size: 1.5em;
-      margin-top: 0.3em;
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
     }
-    .section {
-      padding: 3em 1.5em;
-      text-align: center;
-      background-color: #f9fcfd;
+    header img {
+      height: 50px;
     }
-    .section:nth-child(even) {
-      background-color: #e0f7fa;
-    }
-    .section h2 {
-      font-size: 2em;
-      margin-bottom: 1em;
-    }
-    .service {
-      margin: 1.5em 0;
-      font-size: 1.2em;
-    }
-    .btn {
-      display: inline-block;
-      margin: 0.5em;
-      padding: 0.8em 1.8em;
-      background-color: #00838f;
+    header nav a {
+      margin-left: 20px;
       color: white;
-      font-size: 1em;
       text-decoration: none;
-      border-radius: 30px;
-      transition: background-color 0.3s ease;
+      font-weight: bold;
     }
-    .btn:hover {
-      background-color: #005f63;
+    .hero {
+      text-align: center;
+      padding: 100px 20px 40px;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 5px #000;
+    }
+    .hero h2 {
+      font-size: 1.5em;
+      color: #f0f0f0;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: auto;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      gap: 20px;
+    }
+    .card {
+      background-color: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      width: 280px;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+    .card h3 {
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .card p {
+      color: #ddd;
+    }
+    .contact {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .contact a {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #00bcd4;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 10px;
     }
     footer {
-      background-color: #004d4d;
-      color: white;
       text-align: center;
-      padding: 1.2em;
+      padding: 20px;
+      background-color: rgba(0,0,0,0.4);
       font-size: 0.9em;
+    }
+    @media (max-width: 768px) {
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo">ZOU ZOU GREEN ISLAND</div>
-    <div class="slogan">綠島潛水 & PADI潛水考證</div>
-  </header>
+  <div class="overlay">
+    <header>
+      <img src="https://upload.wikimedia.org/wikipedia/zh/thumb/4/4c/PADI_logo.svg/1200px-PADI_logo.svg.png" alt="PADI Logo" />
+      <nav>
+        <a href="#">首頁</a>
+        <a href="#">關於我們</a>
+        <a href="#">預約潛水</a>
+      </nav>
+    </header>
 
-  <div class="section">
-    <h2>我們的服務</h2>
-    <div class="service"><strong>體驗潛水：</strong> 初次潛水也不怕！一對一教練帶你輕鬆下海。</div>
-    <div class="service"><strong>旅遊潛水：</strong> 導潛帶你探索綠島的秘境潛點，適合持證潛客。</div>
-    <div class="service"><strong>PADI 潛水考證：</strong> 提供 Open Water、AOW 課程，完整培訓與認證。</div>
+    <div class="hero">
+      <h1>Zou Zou Green Island</h1>
+      <h2>綠島走走</h2>
+      <p>提供綠島專業的體驗潛水、導潛行程，以及 PADI 潛水證照課程。</p>
+    </div>
+
+    <section class="services">
+      <div class="card">
+        <h3>體驗潛水</h3>
+        <p>不會游泳也可以！教練一對一帶你安心潛入海底世界。</p>
+      </div>
+      <div class="card">
+        <h3>旅遊潛水</h3>
+        <p>持證潛客專屬行程，探索綠島經典與秘境潛點。</p>
+      </div>
+      <div class="card">
+        <h3>PADI 潛水考證</h3>
+        <p>完整教學課程，取得國際潛水執照，邁向自由潛旅人生！</p>
+      </div>
+    </section>
+
+    <div class="contact">
+      <a href="https://line.me/ti/p/@你的LINE帳號" target="_blank">LINE 預約</a>
+      <a href="https://www.instagram.com/zouzou_greenisland" target="_blank">Instagram</a>
+    </div>
+
+    <footer>
+      © Zou Zou Green Island 走走工作室
+    </footer>
   </div>
-
-  <div class="section">
-    <h2>聯絡我們</h2>
-    <a class="btn" href="https://page.line.me/606sogam" target="_blank">LINE 官方帳號</a>
-    <a class="btn" href="https://www.instagram.com/zouzou_greenisland" target="_blank">Instagram</a>
-    <a class="btn" href="#" target="_blank">Google 表單（敬請期待）</a>
-  </div>
-
-  <footer>
-    © Zou Zou Green Island 走走工作室
-  </footer>
 </body>
 </html>
