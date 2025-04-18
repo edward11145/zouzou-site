@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zou Zou Green Island 潛水</title>
+  <meta name="description" content="綠島潛水、體驗潛水、旅遊潛水與 PADI 潛水考證，盡在 Zou Zou 走走工作室！" />
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Noto Sans TC', sans-serif;
+      background: url('https://png.pngtree.com/thumb_back/fh260/background/20230611/pngtree-turtle-and-colorful-fish-in-the-ocean-image_15527070.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.3);
+      min-height: 100vh;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+    }
+    header img {
+      height: 50px;
+    }
+    header nav a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 100px 20px 40px;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 5px #000;
+    }
+    .hero h2 {
+      font-size: 1.5em;
+      color: #f0f0f0;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: auto;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      gap: 20px;
+    }
+    .card {
+      background-color: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      width: 280px;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+    .card h3 {
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .card p {
+      color: #ddd;
+    }
+    .contact {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .contact a {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #00bcd4;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0,0,0,0.4);
+      font-size: 0.9em;
+    }
+    @media (max-width: 768px) {
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      <img src="padi-logo.png" alt="PADI Logo" />
+      <nav>
+        <a href="#">首頁</a>
+        <a href="#">關於我們</a>
+        <a href="#">預約潛水</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <h1>Zou Zou Green Island</h1>
+      <h2>綠島走走</h2>
+      <p>提供綠島專業的體驗潛水、導潛行程，以及 PADI 潛水證照課程。</p>
+    </div>
+
+    <section class="services">
+      <div class="card">
+        <h3>體驗潛水</h3>
+        <p>不會游泳也可以！教練一對一帶你安心潛入海底世界。</p>
+      </div>
+      <div class="card">
+        <h3>旅遊潛水</h3>
+        <p>持證潛客專屬行程，探索綠島經典與秘境潛點。</p>
+      </div>
+      <div class="card">
+        <h3>PADI 潛水考證</h3>
+        <p>完整教學課程，取得國際潛水執照，邁向自由潛旅人生！</p>
+      </div>
+    </section>
+
+    <div class="contact">
+      <a href="https://line.me/ti/p/@你的LINE帳號" target="_blank">LINE 預約</a>
+      <a href="https://www.instagram.com/zouzou_greenisland" target="_blank">Instagram</a>
+    </div>
+
+    <footer>
+      © Zou Zou Green Island 走走工作室
+    </footer>
+  </div>
+</body>
+</html>
